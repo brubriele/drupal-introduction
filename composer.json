@@ -7,7 +7,9 @@
         "composer/installers": "^1.0.24",
         "wikimedia/composer-merge-plugin": "^1.4",
         "drupal/admin_toolbar": "^1.27",
-        "drupal/jsonapi_extras": "^3.12"
+        "drupal/jsonapi_extras": "^3.12",
+        "webonyx/graphql-php": "0.13.1",
+        "drupal/graphql": "^3.0"
     },
     "replace": {
         "drupal/core": "^8.7"

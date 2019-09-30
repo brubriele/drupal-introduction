@@ -29,6 +29,10 @@ class ComposerStaticInitDrupal8
             'Zend\\Escaper\\' => 13,
             'Zend\\Diactoros\\' => 15,
         ),
+        'Y' => 
+        array (
+            'Youshido\\GraphQL\\' => 17,
+        ),
         'W' => 
         array (
             'Wikimedia\\Composer\\' => 19,
@@ -85,6 +89,7 @@ class ComposerStaticInitDrupal8
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
+            'GraphQL\\' => 8,
             'Goutte\\' => 7,
         ),
         'E' => 
@@ -165,6 +170,10 @@ class ComposerStaticInitDrupal8
         'Zend\\Diactoros\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-diactoros/src',
+        ),
+        'Youshido\\GraphQL\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/youshido/graphql/src',
         ),
         'Wikimedia\\Composer\\' => 
         array (
@@ -309,6 +318,10 @@ class ComposerStaticInitDrupal8
         'GuzzleHttp\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+        ),
+        'GraphQL\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/webonyx/graphql-php/src',
         ),
         'Goutte\\' => 
         array (

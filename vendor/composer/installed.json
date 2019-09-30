@@ -1105,6 +1105,64 @@
         ]
     },
     {
+        "name": "drupal/graphql",
+        "version": "3.0.0-beta5",
+        "version_normalized": "3.0.0.0-beta5",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/graphql.git",
+            "reference": "8.x-3.0-beta5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/graphql-8.x-3.0-beta5.zip",
+            "reference": "8.x-3.0-beta5",
+            "shasum": "46048351613449892f4de9715cfc526df1dc2cf7"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "youshido/graphql": "1.5.3"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-3.x": "3.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-3.0-beta5",
+                "datestamp": "1521475984",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Beta releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "fubhy",
+                "homepage": "https://www.drupal.org/user/761344"
+            },
+            {
+                "name": "klausi",
+                "homepage": "https://www.drupal.org/user/262198"
+            },
+            {
+                "name": "pmelab",
+                "homepage": "https://www.drupal.org/user/555322"
+            }
+        ],
+        "description": "Exposes your Drupal data model through a GraphQL schema.",
+        "homepage": "http://drupal.org/project/graphql",
+        "support": {
+            "source": "https://git.drupalcode.org/project/graphql"
+        }
+    },
+    {
         "name": "drupal/jsonapi_extras",
         "version": "3.12.0",
         "version_normalized": "3.12.0.0",
@@ -1165,6 +1223,59 @@
         "homepage": "https://www.drupal.org/project/jsonapi_extras",
         "support": {
             "source": "https://git.drupalcode.org/project/jsonapi_extras"
+        }
+    },
+    {
+        "name": "drupal/typed_data",
+        "version": "1.0.0-alpha3",
+        "version_normalized": "1.0.0.0-alpha3",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/typed_data.git",
+            "reference": "8.x-1.0-alpha3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/typed_data-8.x-1.0-alpha3.zip",
+            "reference": "8.x-1.0-alpha3",
+            "shasum": "962d53659f73de8dfa43f291ef40ec26e1b7a07f"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-alpha3",
+                "datestamp": "1554612486",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Alpha releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "TR",
+                "homepage": "https://www.drupal.org/user/202830"
+            },
+            {
+                "name": "fago",
+                "homepage": "https://www.drupal.org/user/16747"
+            }
+        ],
+        "description": "Extends the core Typed Data API with new APIS and features.",
+        "homepage": "https://www.drupal.org/project/typed_data",
+        "support": {
+            "source": "https://git.drupalcode.org/project/typed_data"
         }
     },
     {
@@ -5036,6 +5147,60 @@
         ]
     },
     {
+        "name": "webonyx/graphql-php",
+        "version": "v0.13.1",
+        "version_normalized": "0.13.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/webonyx/graphql-php.git",
+            "reference": "0226b08429e5a102ea99cda9ddc4a7185006473f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/0226b08429e5a102ea99cda9ddc4a7185006473f",
+            "reference": "0226b08429e5a102ea99cda9ddc4a7185006473f",
+            "shasum": ""
+        },
+        "require": {
+            "ext-json": "*",
+            "ext-mbstring": "*",
+            "php": "^7.1||^8.0"
+        },
+        "require-dev": {
+            "doctrine/coding-standard": "^5.0",
+            "phpbench/phpbench": "^0.14.0",
+            "phpstan/phpstan": "0.10.5",
+            "phpstan/phpstan-phpunit": "0.10.0",
+            "phpstan/phpstan-strict-rules": "0.10.1",
+            "phpunit/phpcov": "^5.0",
+            "phpunit/phpunit": "^7.2",
+            "psr/http-message": "^1.0",
+            "react/promise": "2.*"
+        },
+        "suggest": {
+            "psr/http-message": "To use standard GraphQL server",
+            "react/promise": "To leverage async resolving on React PHP platform"
+        },
+        "time": "2019-03-09T15:34:29+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "GraphQL\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "A PHP port of GraphQL reference implementation",
+        "homepage": "https://github.com/webonyx/graphql-php",
+        "keywords": [
+            "api",
+            "graphql"
+        ]
+    },
+    {
         "name": "wikimedia/composer-merge-plugin",
         "version": "v1.4.1",
         "version_normalized": "1.4.1.0",
@@ -5085,6 +5250,51 @@
             }
         ],
         "description": "Composer plugin to merge multiple composer.json files"
+    },
+    {
+        "name": "youshido/graphql",
+        "version": "v1.5.3",
+        "version_normalized": "1.5.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Youshido/GraphQL.git",
+            "reference": "e941e8f208e780b529948fa10c502bc59c9fa644"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Youshido/GraphQL/zipball/e941e8f208e780b529948fa10c502bc59c9fa644",
+            "reference": "e941e8f208e780b529948fa10c502bc59c9fa644",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5,<8.0-DEV"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8"
+        },
+        "time": "2018-01-16T15:26:05+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Youshido\\GraphQL\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alexandr Viniychuk",
+                "email": "a@viniychuk.com"
+            },
+            {
+                "name": "Portey Vasil",
+                "email": "portey@gmail.com"
+            }
+        ],
+        "description": "Pure PHP GraphQL"
     },
     {
         "name": "zendframework/zend-diactoros",
