@@ -9,7 +9,8 @@
         "drupal/admin_toolbar": "^1.27",
         "drupal/jsonapi_extras": "^3.12",
         "webonyx/graphql-php": "0.13.1",
-        "drupal/graphql": "^3.0"
+        "drupal/graphql": "^3.0",
+        "drupal/devel": "^2.1"
     },
     "replace": {
         "drupal/core": "^8.7"
