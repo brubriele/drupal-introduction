@@ -12,7 +12,7 @@ $databases['default']['default'] = array (
 );
 
 // Config Sync
-$config_directories['sync'] = 'sites/default/files/config/sync';
+$config_directories['sync'] = 'config/sync';
 
 // Disable cache
 $settings['container_yamls'][] = __DIR__ . '/services.local.yml';
