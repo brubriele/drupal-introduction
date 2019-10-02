@@ -1,0 +1,31 @@
+uuid: 96665625-2dea-45ae-8f8f-a3de11ba27a8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:jumbotron:f4239927-38cb-4071-9a96-ae3b45a97440'
+  module:
+    - block_content
+    - system
+  theme:
+    - mytheme
+id: jumbotron
+theme: mytheme
+region: content
+weight: -2
+provider: null
+plugin: 'block_content:f4239927-38cb-4071-9a96-ae3b45a97440'
+settings:
+  id: 'block_content:f4239927-38cb-4071-9a96-ae3b45a97440'
+  label: Jumbotron
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /home
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,57 @@
+uuid: f9459229-903b-4133-9903-ebff1464631b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.jumbotron
+    - field.field.block_content.jumbotron.field_body
+    - field.field.block_content.jumbotron.field_main_cta
+    - field.field.block_content.jumbotron.field_secondary_cta
+    - field.field.block_content.jumbotron.field_title
+  module:
+    - link
+id: block_content.jumbotron.default
+targetEntityType: block_content
+bundle: jumbotron
+mode: default
+content:
+  field_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_main_cta:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_secondary_cta:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
