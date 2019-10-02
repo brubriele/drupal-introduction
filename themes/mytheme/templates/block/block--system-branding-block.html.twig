@@ -1,0 +1,57 @@
+{% extends "block.html.twig" %}
+{#
+/**
+ * @file
+ * Theme override for a branding block.
+ *
+ * Each branding element variable (logo, name, slogan) is only available if
+ * enabled in the block configuration.
+ *
+ * Available variables:
+ * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - site_name: Name for site as defined in Site information settings.
+ * - site_slogan: Slogan for site as defined in Site information settings.
+ */
+#}
+{% block content %}
+  <header>
+    <div class="bg-dark collapse" id="navbarHeader" style="">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            {% if site_slogan %}
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">{{ site_slogan }}</p>
+            {% endif %}
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Follow on Twitter</a></li>
+              <li><a href="#" class="text-white">Like on Facebook</a></li>
+              <li><a href="#" class="text-white">Email me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home"
+           class="navbar-brand d-flex align-items-center">
+          {% if site_logo %}
+            <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" width="20" height="20" class="mr-2"/>
+          {% endif %}
+          {% if site_name %}
+            <strong>{{ site_name }}</strong>
+          {% endif %}
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+{% endblock %}
