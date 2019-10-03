@@ -44,3 +44,4 @@ sites/simpletest
 # Custom
 .idea
 composer.lock
+.DS_Store
