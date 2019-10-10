@@ -10,7 +10,8 @@
         "drupal/jsonapi_extras": "^3.12",
         "webonyx/graphql-php": "0.13.1",
         "drupal/graphql": "^3.0",
-        "drupal/devel": "^2.1"
+        "drupal/devel": "^2.1",
+        "drupal/role_theme_switcher": "^1.0"
     },
     "replace": {
         "drupal/core": "^8.7"
