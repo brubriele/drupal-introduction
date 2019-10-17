@@ -28,6 +28,8 @@ Verificar se o módulo/extensão estão habilitados:
 * modrewrite (Apache)
 * OPcache (PHP)
 
+## Addons
+
 Exemplo de configuração do VirtualHost:
 ```
 <VirtualHost *:80>
